@@ -1,0 +1,31 @@
+{
+  "name": "tind-advanced-search-mockup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npx webpack-cli",
+    "start": "npx webpack-cli serve --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tind/advanced-search-mockup.git"
+  },
+  "author": "Thomas Rambø",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tind/advanced-search-mockup/issues"
+  },
+  "homepage": "https://github.com/tind/advanced-search-mockup#readme",
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.1.1",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "vue": "^3.1.1",
+    "vue-loader": "^16.1.2",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
