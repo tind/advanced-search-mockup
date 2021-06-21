@@ -10,7 +10,7 @@
                 <clause v-for="clause in clauses" :key="clause.ident" :ident="clause.ident"></clause>
             </div>
             <div class="search-actions">
-                <button id="add-clause" type="button" @click="addClause">Add clause</button>
+                <button id="add-clause" type="button" :disabled="!belowThreeClauses" @click="addClause">Add clause</button>
                 <button id="remove-clause" type="button" :disabled="!atLeastOneClause" @click="removeClause">Remove clause</button>
                 <button id="search" type="button" @click="search">Search</button>
             </div>
@@ -33,6 +33,9 @@ export default {
     computed: {
         atLeastOneClause() {
             return this.clauses.length > 1
+        },
+        belowThreeClauses() {
+            return this.clauses.length < 3
         }
     },
     methods: {
